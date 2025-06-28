@@ -1,0 +1,142 @@
+/* LoginPage.css */
+
+body, html {
+  height: 100%;
+  margin: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.login-page {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+  background: linear-gradient(to right, #6dd5ed, #2193b0);
+}
+
+.login-toggle-bar {
+  display: flex;
+  justify-content: center;
+  background-color: #ffffff10;
+  padding: 1rem;
+  gap: 1rem;
+}
+
+.toggle-btn {
+  padding: 0.7rem 2rem;
+  border: none;
+  border-radius: 50px;
+  background: #ffffff30;
+  color: white;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s;
+}
+
+.toggle-btn.active,
+.toggle-btn:hover {
+  background: #ffffff70;
+  color: #000;
+}
+
+.login-container {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.login-section {
+  width: 100%;
+  max-width: 500px;
+  padding: 2rem;
+  border-radius: 20px;
+  background: white;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.2);
+  transition: all 0.3s ease;
+}
+
+.user-bg {
+  background: url('C:\Users\Nithya Sivakumar\OneDrive\Desktop\load-react\transpogo\public\img3.png') no-repeat center center / cover;
+}
+
+.admin-bg {
+  background: url('C:\Users\Nithya Sivakumar\OneDrive\Desktop\load-react\transpogo\public\img3.png') no-repeat center center / cover;
+}
+
+.login-box {
+  background: rgba(255, 255, 255, 0.9);
+  padding: 2rem;
+  border-radius: 20px;
+}
+
+.login-box h1 {
+  margin-bottom: 0.5rem;
+  color: #333;
+}
+
+.login-box p {
+  margin-bottom: 1.5rem;
+  color: #555;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.3rem;
+  font-weight: 600;
+}
+
+.form-group input {
+  width: 100%;
+  padding: 0.7rem;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+}
+
+.password-field {
+  position: relative;
+}
+
+.password-field span {
+  position: absolute;
+  right: 10px;
+  top: 35%;
+  cursor: pointer;
+}
+
+.form-options {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1rem;
+}
+
+.link {
+  color: #007bff;
+  cursor: pointer;
+  font-weight: 500;
+}
+
+.submit-btn {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 50px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background 0.3s ease;
+}
+
+.submit-btn:hover {
+  background-color: #0056b3;
+}
+
+.signup-link {
+  text-align: center;
+  margin-top: 1rem;
+}
