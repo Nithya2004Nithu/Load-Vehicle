@@ -1,0 +1,262 @@
+.payment-page {
+  min-height: 100vh;
+  background-color: #f8f9fa;
+  font-family: 'Arial', sans-serif;
+}
+
+.header {
+  background-color: #2c3e50;
+  padding: 1rem 2rem;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+}
+
+.navbar {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.logo {
+  color: #fff;
+  font-size: 1.8rem;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.nav-links {
+  display: flex;
+  gap: 1rem;
+}
+
+.nav-btn {
+  background: none;
+  border: none;
+  color: #fff;
+  padding: 0.5rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+
+.nav-btn:hover {
+  background-color: rgba(255, 255, 255, 0.1);
+}
+
+.nav-btn.active {
+  background-color: rgba(255, 255, 255, 0.2);
+  font-weight: bold;
+}
+
+.payment-container {
+  max-width: 700px;
+  margin: 2rem auto;
+  padding: 2rem;
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.payment-container h1 {
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.payment-container p {
+  color: #555;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.payment-methods {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-bottom: 2rem;
+}
+
+.payment-method {
+  flex: 1;
+  padding: 1.5rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.payment-method:hover {
+  border-color: #3498db;
+  background-color: #f8f9ff;
+}
+
+.payment-method.selected {
+  border-color: #3498db;
+  background-color: #ebf5ff;
+}
+
+.payment-method-icon {
+  font-size: 2rem;
+  margin-bottom: 1rem;
+}
+
+/* Google Pay icon styling */
+.payment-method-icon:contains("G") {
+  background-color: #4285F4;
+  color: white;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-weight: bold;
+}
+
+.payment-method-name {
+  font-weight: bold;
+  color: #333;
+}
+
+.credit-card-form,
+.bank-transfer-info,
+.gpay-info {
+  margin-top: 2rem;
+}
+
+.credit-card-form h2,
+.bank-transfer-info h2,
+.gpay-info h2 {
+  font-size: 1.3rem;
+  color: #2c3e50;
+  margin-bottom: 1.5rem;
+}
+
+input[type="text"], 
+input[type="password"] {
+  width: 100%;
+  padding: 0.8rem;
+  margin-bottom: 1rem;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 1rem;
+  box-sizing: border-box;
+}
+
+input[type="text"]:focus, 
+input[type="password"]:focus {
+  border-color: #3498db;
+  outline: none;
+  box-shadow: 0 0 0 2px rgba(52, 152, 219, 0.2);
+}
+
+.payment-row {
+  display: flex;
+  gap: 1rem;
+}
+
+.payment-row input {
+  flex: 1;
+}
+
+.pay-button {
+  width: 100%;
+  padding: 0.8rem;
+  background-color: #3498db;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  font-weight: bold;
+  cursor: pointer;
+  margin-top: 1.5rem;
+  transition: background-color 0.3s;
+}
+
+.pay-button:hover {
+  background-color: #2980b9;
+}
+
+.payment-secure-note {
+  margin-top: 1.5rem;
+  text-align: center;
+  color: #666;
+  font-size: 0.9rem;
+}
+
+/* Google Pay button styling */
+.gpay-button {
+  width: 180px;
+  height: 48px;
+  background-color: black;
+  border-radius: 4px;
+  cursor: pointer;
+  margin: 1.5rem auto;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background-color 0.3s;
+}
+
+.gpay-button:hover {
+  background-color: #333;
+}
+
+.gpay-logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.gpay-text {
+  color: white;
+  font-family: 'Product Sans', Arial, sans-serif;
+  font-size: 1.2rem;
+  font-weight: 500;
+  margin-left: 8px;
+}
+
+.gpay-text::before {
+  content: "G";
+  color: #4285F4;
+  font-weight: bold;
+  margin-right: 4px;
+}
+
+.bank-info-note {
+  margin-top: 1rem;
+  padding: 1rem;
+  background-color: #f8f9fa;
+  border-left: 4px solid #f39c12;
+  border-radius: 4px;
+}
+
+.bank-info-note p {
+  text-align: left;
+  color: #666;
+  margin-bottom: 0;
+  font-size: 0.9rem;
+}
+
+/* Responsive styles */
+@media (max-width: 768px) {
+  .payment-methods {
+    flex-direction: column;
+  }
+  
+  .payment-container {
+    padding: 1.5rem;
+    margin: 1rem;
+  }
+  
+  .payment-row {
+    flex-direction: column;
+    gap: 0;
+  }
+}

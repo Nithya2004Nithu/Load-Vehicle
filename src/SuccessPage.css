@@ -1,0 +1,42 @@
+.success-container {
+    background: rgba(255, 255, 255, 0.95);
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.2);
+    text-align: center;
+    width: 380px;
+    margin: 100px auto;
+    animation: fadeIn 1s ease-in-out;
+    font-family: Arial, sans-serif;
+    background-image: url('C:\Users\Nithya Sivakumar\OneDrive\Desktop\load-react\transpogo\public\img4.png');
+    background-size: cover;
+  }
+  
+  .success-container h1 {
+    color: #28a745;
+    margin-bottom: 15px;
+    font-size: 24px;
+  }
+  
+  .success-container p {
+    font-size: 18px;
+    margin-bottom: 20px;
+  }
+  
+  .success-button {
+    padding: 12px 24px;
+    font-size: 16px;
+    color: white;
+    background: #0077ff;
+    border: none;
+    border-radius: 8px;
+    cursor: pointer;
+    transition: 0.3s;
+    font-weight: bold;
+  }
+  
+  .success-button:hover {
+    background: #005bb5;
+    transform: scale(1.05);
+  }
+  
